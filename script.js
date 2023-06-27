@@ -201,14 +201,14 @@ function collisionDetection() {
 function drawScore() {
     ctx.font = "12px Arial";
     ctx.fillStyle = "red";
-    ctx.fillText(`Score: ${score}`, 8, 15);
+    ctx.fillText(`スコア: ${score}`, 8, 15);
 }
 
 // ライフをキャンバスに表示する
 function drawLives() {
     ctx.font = "12px Arial";
     ctx.fillStyle = "red";
-    ctx.fillText(`Lives: ${lives}`, canvas.width -50, 15);
+    ctx.fillText(`ライフ: ${lives}`, canvas.width -50, 15);
 }
 
 // draw関数を10msごとに実行する
