@@ -194,12 +194,12 @@ function keyUpHandler(e) {
 
 // マウス操作でパドルを動かす
 function mouseMoveHandler(e) {
-    const relativeX = e.clientX - canvas.getBoundingClientRect().left//window.innerWidth / 2;
-    // console.log(relativeX);
-    if (relativeX - paddleWidth / 2 > 0 && relativeX + paddleWidth / 2 < canvas.width) {
+    const relativeX = e.clientX - canvas.offsetLeft;
+    if (relativeX > paddleWidth / 2 && relativeX < canvas.width - paddleWidth / 2) {
         paddleX = relativeX - paddleWidth / 2;
     }
 }
+
 
 // ボールとブロックの衝突検知
 function collisionDetection() {
@@ -235,7 +235,7 @@ function drawLives() {
     ctx.fillStyle = "white";
     ctx.fillText(`ライフ: ${lives}`, canvas.width - 50, 15);
 }
+drawBricks();
+drawBall();
+drawPaddle();
 
-// draw関数を10msごとに実行する
-// draw();
-// clearInterval(interval);
