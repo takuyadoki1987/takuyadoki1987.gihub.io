@@ -1,23 +1,64 @@
-body {
-    padding: 0;
-    margin: 0;
-    background-image: url(retro.png);
-    background-size:cover;
-    background-attachment: fixed;
-    background-position: center  center;
-}
-
 canvas {
-    background: #272822;
-    display: block;
-    margin: 210px auto;
-    width: 520px;
-    height: 440px;
-    border: solid 1.0px black;
+  background: #272822;
+  display: block;
+  margin: 5px auto;
+  width: 520px;
+  height: 440px;
+  border: solid 10px rgb(187, 49, 74);
+  border-radius: 20px;
 }
 
-#title {
-    text-align: center;
-    font-family: 'Noto Sans JP';
+.canvas_innermost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(221, 204, 176);
+  width: 540px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-left: solid 15px rgb(250, 240, 215);
+  border-right: solid 15px rgb(156, 117, 60);
+  border-top: solid 15px rgb(236, 211, 180);
+  border-bottom: solid 15px rgb(115, 77, 38);
+  border-radius: 10px;
+}
+.canvas_inner {
+  background-color: rgb(213, 196, 166);
+  position: absolute;
+  width: 1020px;
+  height: 620px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
 }
 
+.canvas_outer {
+  background-color: rgb(187, 49, 74);
+  position: relative;
+  margin: 100px auto;
+  width: 1050px;
+  height: 680px;
+  border-radius: 5px;
+}
+
+#gamename {
+  margin: 0 auto;
+  padding-bottom: 0;
+  text-align: center;
+  font-size: 24px;
+}
+
+#fnd {
+  width: 100px;
+  margin: 10px auto;
+  padding: 0;
+  text-align: center;
+  font-size: 24px;
+  border: solid 3px black;
+  border-radius: 20px;
+}
