@@ -13,7 +13,8 @@ canvas {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(221, 204, 176);
+  /* background-color: rgb(221, 204, 176); */
+  background: linear-gradient(to right bottom, rgb(223,206,178), rgb(194,177,134));
   width: 540px;
   height: 550px;
   position: absolute;
@@ -26,8 +27,10 @@ canvas {
   border-bottom: solid 15px rgb(115, 77, 38);
   border-radius: 10px;
 }
+
 .canvas_inner {
-  background-color: rgb(213, 196, 166);
+  /* background-color: rgb(213, 196, 166); */
+  background: linear-gradient(to right bottom, rgb(222,205,179), rgb(195,178,135));
   position: absolute;
   width: 1020px;
   height: 620px;
@@ -61,4 +64,31 @@ canvas {
   font-size: 24px;
   border: solid 3px black;
   border-radius: 20px;
+}
+
+.rogo {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: -100px;
+  width: 130px;
+}
+
+.juji {
+  margin-left: 20px;
+  margin-top: 250px;
+  margin-bottom: -50px;
+  width: 190px;
+}
+
+.option {
+  margin-top: 30px;
+  margin-bottom: -250px;
+  margin-left: 830px;
+  width: 90px;
+}
+
+.ab {
+  margin-top: -90px;
+  margin-left: 810px;
+  width: 200px;
 }
