@@ -163,7 +163,7 @@ function keyUpHandler(e) {
 
 // マウス操作でパドルを動かす
 function mouseMoveHandler(e) {
-    const relativeX = e.clientX - canvas.offsetLeft;
+    const relativeX = e.clientX - 1020// - canvas.width;
     if (relativeX > paddleWidth / 2 && relativeX < canvas.width - paddleWidth / 2) {
         paddleX = relativeX - paddleWidth / 2;
     }
